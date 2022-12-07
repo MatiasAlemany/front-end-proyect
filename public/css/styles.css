@@ -240,10 +240,11 @@ h1 {
 
 footer {
     margin: auto;
-    width: 90vw;
+    width: 100vw;
     text-align: center;
     font-size: 14px;
     box-sizing: border-box;
+    background-color: #ebebeb;
 }
 
 footer h3 {
