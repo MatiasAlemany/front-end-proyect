@@ -1,0 +1,391 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+   --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* -----BODY O GENERALES DE LA PAGINA------- */
+body {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 12px;
+    
+}
+
+/* -------HEADER-------- */
+header {
+    background-color: var(--Amarillo);  
+    padding: 20px;
+    width: 100vw;
+    margin: auto;
+    padding-bottom: 10px;  
+    box-sizing: border-box;
+}
+
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 5px;
+}
+
+.logo {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* ESTILOS BARRA DE BUSQUEDA HEADER */
+
+.barra-busqueda {
+    width: 45%;
+    display: flex;
+    align-self: center;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.barra-busqueda form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+ }
+
+ .campo-busqueda {
+    width: 100%;
+    display: inline;
+}
+
+.campo-busqueda input {
+    width: 100%;
+}
+
+.lupa {
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+
+button, input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.burger-menu{
+    width: 15%;
+    margin: 0 auto; 
+    color: white;
+    box-sizing: border-box;
+}
+
+.burger {
+    background-color: var(--Celeste);
+    border-radius: 13%;  
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sacar-link a{
+    text-decoration:none;
+    color: black;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    text-decoration:none;
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+
+.compra-en-cuotas i {
+    display: flex;
+    justify-content: center;
+}
+
+.compra-en-cuotas p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px;
+}
+
+.site {
+    display: none;
+}
+/* --------- MAIN ----------- */
+
+main {
+    width: 100vw;
+    margin: auto;
+    background-color: var(--Gris-claro);
+    box-sizing: border-box;
+}
+
+.banner img {
+    width: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.productos-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+article {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+article img {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--Gris-claro);
+}
+
+.caja-articulo {
+    background-color: white;
+    border-top: solid 1px var(--Gris-claro);
+    padding: 15px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.camion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.fa-truck {
+    display: flex;    
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color:var(--Verde);
+    border: 1px solid #39b54a;    
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.caracteristicas-articulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.precios {
+    font-size: 18px;
+    margin: 0%;
+    box-sizing: border-box;
+    display: flex;
+    flex-grow: 0.3;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: var(--Verde);
+    margin: 0%;
+    box-sizing: border-box;
+    display: flex;
+    flex-grow: 3;
+}
+
+.descripciones {
+    display: none;
+    font-size: 12px;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* --------FOOTER-------- */
+
+footer {
+    margin: auto;
+    width: 90vw;
+    text-align: center;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+footer h3 {
+    color: #666;
+    font-size: 20px;
+    padding: 2%;
+    margin-bottom: 0%;
+    box-sizing: border-box;
+}
+
+footer i {
+    color: var(--Celeste);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 12px;
+    color: var(--Gris-oscuro);
+    box-sizing: border-box;
+}
+
+
+/* ---------------MEDIA QUERIS------------ */
+
+/* MOBILE */
+
+
+/* TABLET */
+@media (min-width: 768px) { 
+    
+    .productos-principal article {
+        width: 40%;
+     }
+
+    .caja-articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+
+     .site {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site ul {
+        display: flex;
+    }
+
+    .site li {
+        margin: 0 5px;
+    }
+
+    .site li i {
+        padding: 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    .descripciones {
+        display: block;
+    }
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra-en-cuotas {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .cuotas {
+        width: 30%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .barra-busqueda {
+        width: 30%;
+    }
+    }
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    .productos-principal article {
+        width: 20%;
+     }
+
+    .caja-articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+
+     .site {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site ul {
+        display: flex;
+    }
+
+    .site li {
+        margin: 0 5px;
+    }
+
+    .site li i {
+        padding: 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    .descripciones {
+        display: block;
+    }
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra-en-cuotas {
+        max-width: 350px;
+        text-align: right;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {
+    .main-header, .site {
+        max-width: 1200px;
+        margin: auto;
+    }    
+}
+
+
+
+
+
+
+/*  */

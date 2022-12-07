@@ -1,0 +1,376 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+   --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/* -----BODY O GENERALES DE LA PAGINA------- */
+body {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 12px;
+    background-color: var(--Gris-claro);
+    
+}
+
+/* -------HEADER-------- */
+header {
+    background-color: var(--Amarillo);  
+    padding: 20px;
+    width: 100vw;
+    margin: auto;
+    padding-bottom: 10px;  
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+
+/* ESTILOS BARRA DE BUSQUEDA HEADER */
+
+.barra-busqueda {
+    width: 45%;
+    display: flex;
+    align-self: center;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.barra-busqueda form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+ }
+
+ .campo-busqueda {
+    width: 100%;
+    display: inline;
+}
+
+.campo-busqueda input {
+    width: 100%;
+}
+
+.lupa {
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+
+.barra-busqueda button, input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+/* --  MENU HAMBURGUESA --*/
+.burger-menu{
+    width: 15%;
+    margin: 0 auto; 
+    color: white;
+    box-sizing: border-box;
+}
+
+.burger {
+    background-color: var(--Celeste);
+    border-radius: 13%;  
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sacar-link a{
+    text-decoration:none;
+    color: black;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    text-decoration:none;
+    padding-left: 0px;
+    box-sizing: border-box;
+}
+
+.compra-en-cuotas i {
+    display: flex;
+    justify-content: center;
+}
+
+
+.compra-en-cuotas p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    padding: 5px;
+}
+
+.site {
+    display: none;
+}
+
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+/* ----------MAIN FORMULARIO ------- */
+
+/* CAJA FORMULARIO */
+
+.caja-formulario {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+/* CAMPOS DE RELLENO */
+.espacios {
+    display: block;
+    margin-bottom: 2rem;
+    padding-left: 0.75rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 0.75rem;
+ }
+
+ /* FECHA DE NACIMIENTO */
+
+ .fecha-nacimiento {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+ .fecha-nacimiento label {
+    font-size: 20px;
+    margin-bottom: 1rem;
+ }
+
+ .fecha-nacimiento input {
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 2%;
+ }
+
+/* PERFIL DE USUARIO */
+
+.perfil-usuario {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.titulo-perfil {
+    margin-bottom: 1rem;
+}
+
+.perfil-compra-venta {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+/* --- INTERESES --- */
+
+.caja-intereses {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-intereses {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.intereses {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.intereses input {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+
+/* ---FOTO DE PERFIL--- */
+
+.foto-perfil {
+    font-size: 20px;
+}
+
+.foto-perfil input {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* --- BOTONES --- */
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.boton1 {
+    width: 35%;
+    padding: 0.75rem;
+    background-color: #03264C;
+    border-radius: 5px;
+    color: #ffffff;
+    
+}
+
+.boton1 button {
+    background-color: #03264C;
+    border: none;
+    color: white;
+    margin: auto;
+}
+
+
+/* ---------------MEDIA QUERIS------------ */
+
+/* MOBILE */
+
+
+/* TABLET */
+@media (min-width: 768px) { 
+    
+    .productos-principal article {
+        width: 40%;
+     }
+
+    .caja-articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+
+     .site {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site ul {
+        display: flex;
+    }
+
+    .site li {
+        margin: 0 5px;
+    }
+
+    .site li i {
+        padding: 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    .descripciones {
+        display: block;
+    }
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra-en-cuotas {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    /* LOGO - BARRA BUSQUEDA - COMPRA EN CUOTAS // HEADER */
+    .cuotas {
+        width: 30%;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .barra-busqueda {
+        width: 30%;
+    }
+
+    }
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    .productos-principal article {
+        width: 20%;
+     }
+
+    .caja-articulo {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+     }
+
+     .site {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .site ul {
+        display: flex;
+    }
+
+    .site li {
+        margin: 0 5px;
+    }
+
+    .site li i {
+        padding: 5px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    .descripciones {
+        display: block;
+    }
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .compra-en-cuotas {
+        max-width: 350px;
+        text-align: right;
+    }
+}
+
+
