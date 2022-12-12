@@ -181,13 +181,18 @@ article img {
     padding: 15px;
     box-sizing: border-box;
     flex-direction: column;
+    position: relative;
 }
 
-.camion {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-}
+.caja-articulo:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+         
+ }
+
+ .caja-articulo:hover i {
+    transform: rotateZ(90deg);
+    transition: transform 0.7s;
+ }
 
 .fa-truck {
     display: flex;    
@@ -198,7 +203,12 @@ article img {
     border: 1px solid #39b54a;    
     border-radius: 50%;
     box-sizing: border-box;
+    font-size: 16px;
+    position: absolute;
+    top: 273px;
+    right: 50px;
 }
+
 
 .caracteristicas-articulos {
     display: flex;
@@ -213,7 +223,7 @@ h1 {
 }
 
 .precios {
-    font-size: 18px;
+    font-size: 0.8rem;
     margin: 0%;
     box-sizing: border-box;
     display: flex;
@@ -221,7 +231,7 @@ h1 {
 }
 
 .descuentos {
-    font-size: 16px;
+    font-size: 12px;
     color: var(--Verde);
     margin: 0%;
     box-sizing: border-box;
@@ -236,6 +246,11 @@ h1 {
     box-sizing: border-box;
 }
 
+.caja-articulo:hover .descripciones {
+    display: block;
+    padding-top: 1rem;
+}
+
 /* --------FOOTER-------- */
 
 footer {
@@ -244,7 +259,7 @@ footer {
     text-align: center;
     font-size: 14px;
     box-sizing: border-box;
-    background-color: #ebebeb;
+    background-color: white;
 }
 
 footer h3 {
@@ -281,7 +296,7 @@ footer i {
         width: 40%;
      }
 
-    .caja-articulo {
+    .caja-articulo:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
      }
 
@@ -306,8 +321,14 @@ footer i {
         display: none;
     }
     .descripciones {
-        display: block;
+        display: none;
     }
+
+    .caja-articulo:hover .descripciones {
+        display: block;
+        padding-top: 1rem;
+    }
+
     .main-header {
         display: flex;
         justify-content: space-between;
@@ -328,6 +349,10 @@ footer i {
     .barra-busqueda {
         width: 30%;
     }
+
+    .fa-truck {
+        top: 259px;
+    }
     }
 
 /* DESKTOP */
@@ -337,9 +362,9 @@ footer i {
         width: 20%;
      }
 
-    .caja-articulo {
+    .caja-articulo:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-     }
+    }
 
      .site {
         display: flex;
@@ -362,8 +387,14 @@ footer i {
         display: none;
     }
     .descripciones {
-        display: block;
+        display: none;
     }
+
+    .caja-articulo:hover .descripciones {
+        display: block;
+        padding-top: 1rem;
+    }
+
     .main-header {
         display: flex;
         justify-content: space-between;
@@ -372,9 +403,38 @@ footer i {
         max-width: 350px;
         text-align: right;
     }
+
+    .fa-truck {
+        top: 157px;
+        right: 17px;
+    }
+
+    /* ---- FOOTER  ----- */
+
+    .caja-footer {
+        display: flex;
+        font-size: 12px;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .caja-footer section {
+        padding: 2rem 3rem;
+        text-align: center;
+        max-width: 30rem;
+    }
+
+    .caja-footer i {
+        font-size: 2rem;
+        color: #03264C;
+        padding-bottom: 0.625rem;
+    }   
+
+    .sec-footer:hover i {
+        color: #0c64c2;
+    
+    }
 }
-
-
 
 
 @media (min-width: 1200px) {
