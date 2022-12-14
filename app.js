@@ -10,9 +10,12 @@ const app = express();
 
 app.use(express.static(publicPath));
 
+/* SERVIDOR DE RENDER */
+const port = process.env.PORT || 3000;
+
 //Levantando servidor con express
-app.listen(3030, () => {
-    console.log("Servidor funcionando en http://localhost:3030")
+app.listen(port, () => {
+    console.log("Servidor funcionando en http://localhost:" + port)
 });
 
 //Definiendo ruta de raiz
