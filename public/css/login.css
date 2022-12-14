@@ -354,18 +354,28 @@ footer i {
         text-align: right;
     }
 
+    /* ACHICAR FORMULARIO */
+
+    .caja-formulario {
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+        MAX-WIDTH: 40%;
+        margin: auto;
+    }
+
     /* SEPARACION ENTRE ITEMS NAV BAR */
 
     .sacar-link a li {
        padding-left: 60px;
     }
     
-
     /* FOOTER */
 
     footer {
         margin-top: 300px;
     }
+    
     .caja-footer {
         display: flex;
         font-size: 12px;

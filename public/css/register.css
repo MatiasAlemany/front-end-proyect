@@ -485,6 +485,17 @@ footer i {
         max-width: 350px;
         text-align: right;
     }
+
+    /* ACHICAR FORMULARIO */
+
+    .caja-formulario {
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+        max-width: 40%;
+        margin-left: 35px;
+    }
+
     /* SEPARACION ENTRE ITEMS NAV BAR */
 
     .sacar-link a li {
