@@ -45,6 +45,15 @@ header {
     box-sizing: border-box;
 }
 
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    padding: 5px;
+}
+
+
 .logo {
     width: 50%;
     box-sizing: border-box;
@@ -139,12 +148,6 @@ ul {
     display: none;
 }
 
-.main-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-}
 
 /* CAJA FORMULARIO */
 
@@ -202,17 +205,15 @@ footer {
     margin: auto;
     width: 100vw;
     text-align: center;
+    font-size: 12px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 135px;
     background-color: white;
+    margin-top: 200px;
 }
 
 footer h3 {
     color: #666;
-    font-size: 16px;
+    font-size: 20px;
     padding: 2%;
     margin-bottom: 0%;
     box-sizing: border-box;
@@ -220,8 +221,19 @@ footer h3 {
 
 footer i {
     color: var(--Celeste);
-    margin-top: 10px;
+    margin-bottom: 10px;
     box-sizing: border-box;
+}
+
+.caja-footer i {
+    font-size: 2rem;
+    color: #03264C;
+    margin: 6px;
+}   
+
+.sec-footer:hover i {
+    color: #0c64c2;
+
 }
 
 .copyright {
@@ -229,13 +241,13 @@ footer i {
     font-size: 12px;
     color: var(--Gris-oscuro);
     box-sizing: border-box;
+    padding-top: 10px;
+    background-color: white;
 }
 
 
 /* ---------------MEDIA QUERIS------------ */
 
-/* MOBILE */
-
 
 /* TABLET */
 @media (min-width: 768px) { 
@@ -291,72 +303,6 @@ footer i {
     .barra-busqueda {
         width: 30%;
     }
-    }
-
-
-
-
-/* ---------------MEDIA QUERIS------------ */
-
-/* MOBILE */
-
-
-/* TABLET */
-@media (min-width: 768px) { 
-    
-    .productos-principal article {
-        width: 40%;
-     }
-
-    .caja-articulo {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-     }
-
-     .site {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .site ul {
-        display: flex;
-    }
-
-    .site li {
-        margin: 0 5px;
-    }
-
-    .site li i {
-        padding: 5px;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-    .descripciones {
-        display: block;
-    }
-    .main-header {
-        display: flex;
-        justify-content: space-between;
-    }
-    .compra-en-cuotas {
-        max-width: 350px;
-        text-align: right;
-    }
-
-    /* LOGO - BARRA BUSQUEDA - COMPRA EN CUOTAS // HEADER */
-    .cuotas {
-        width: 30%;
-    }
-
-    .logo {
-        width: 30%;
-    }
-
-    .barra-busqueda {
-        width: 30%;
-    }
-
     }
 
 /* DESKTOP */
@@ -372,11 +318,12 @@ footer i {
 
      .site {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .site ul {
         display: flex;
+        align-items: center;
     }
 
     .site li {
@@ -387,6 +334,10 @@ footer i {
         padding: 5px;
     }
 
+    .logo {
+        width: 40%;
+    }
+    
     .burger-menu {
         display: none;
     }
@@ -395,10 +346,54 @@ footer i {
     }
     .main-header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
     }
     .compra-en-cuotas {
         max-width: 350px;
         text-align: right;
     }
+
+    /* SEPARACION ENTRE ITEMS NAV BAR */
+
+    .sacar-link a li {
+       padding-left: 60px;
+    }
+    
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 300px;
+    }
+    .caja-footer {
+        display: flex;
+        font-size: 12px;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .caja-footer section {
+        padding: 2rem 3rem;
+        text-align: center;
+        max-width: 30rem;
+    }
+
+    .caja-footer i {
+        font-size: 2rem;
+        color: #03264C;
+        padding-bottom: 0.625rem;
+    }   
+
+    .sec-footer:hover i {
+        color: #0c64c2;   
+    }
+
+    .copyright {
+        text-align: left;
+        font-size: 12px;
+        color: var(--Gris-oscuro);
+        box-sizing: border-box;
+        background-color: white;
+}
 }

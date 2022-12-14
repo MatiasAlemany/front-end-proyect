@@ -52,6 +52,7 @@ header {
     padding: 5px;
 }
 
+
 .logo {
     width: 50%;
     box-sizing: border-box;
@@ -403,13 +404,14 @@ footer i {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-     .site {
+    .site {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .site ul {
         display: flex;
+        align-items: center;
     }
 
     .site li {
@@ -418,6 +420,10 @@ footer i {
 
     .site li i {
         padding: 5px;
+    }
+
+    .logo {
+        width: 40%;
     }
 
     .burger-menu {
@@ -434,13 +440,19 @@ footer i {
 
     .main-header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .compra-en-cuotas {
         max-width: 350px;
         text-align: right;
     }
+
+    /* SEPARACION ENTRE ITEMS NAV BAR */
+
+    .sacar-link a li {
+        padding-left: 60px;
+     }
 
     .fa-truck {
         top: -17px;
@@ -478,19 +490,12 @@ footer i {
         color: #0c64c2;
     
     }
+    
+    .copyright {
+        text-align: left;
+        font-size: 12px;
+        color: var(--Gris-oscuro);
+        box-sizing: border-box;
+        background-color: white;
+    }
 }
-
-
-@media (min-width: 1200px) {
-    .main-header, .site {
-        max-width: 1200px;
-        margin: auto;
-    }    
-}
-
-
-
-
-
-
-/*  */
